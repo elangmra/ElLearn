@@ -40,3 +40,27 @@
 .fs-23 { font-size: 1.4375rem !important; }
 .fs-24 { font-size: 1.5rem !important; }
 .fs-30 { font-size: 1.875rem !important; }
+
+.link-no-margin {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 95px; /* lebar yang diinginkan */
+}
+.link-no-margin img {
+    width: 100%; /* lebar gambar sesuai dengan lebar elemen <a> */
+    height: auto;
+}
+/* Menghilangkan scrollbar pada Chrome, Safari, dan Edge */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Menghilangkan scrollbar pada Firefox */
+body {
+    scrollbar-width: none;  
+}
+.active{
+    border-bottom: 2px solid #fff !important;
+
+}

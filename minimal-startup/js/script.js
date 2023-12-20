@@ -259,3 +259,163 @@ $('.testimonial-box').owlCarousel({
 });
 
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const myQuestions = [
+        {
+            question: "1. Apa peran utama dari server dalam arsitektur client-server?",
+            answers: {
+                a: "Mengirim permintaan data",
+                b: "Memproses data di sisi client",
+                c: "Menyediakan sumber daya dan layanan kepada client",
+                d: "Menyimpan data secara lokal"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "2. ODBC adalah singkatan dari?",
+            answers: {
+                a: "Online Database Connectivity",
+                b: "Open Database Connectivity",
+                c: "Object Database Connection",
+                d: "Oracle Database Connection"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "3. Apa itu protokol dalam konteks jaringan client-server?",
+            answers: {
+                a: "Alamat IP server",
+                b: "Sebuah set aturan untuk transfer data",
+                c: "Nama domain dari client",
+                d: "Sistem operasi server"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "4. Dalam arsitektur client-server, istilah 'thin client' mengacu pada apa?",
+            answers: {
+                a: "Client dengan perangkat keras yang minimal",
+                b: "Client yang melakukan sebagian besar pemrosesan",
+                c: "Server dengan beban kerja yang rendah",
+                d: "Client yang hanya memiliki antarmuka pengguna"
+            },
+            correctAnswer: "d"
+        },
+        {
+            question: "5. Protokol apa yang biasanya digunakan untuk transfer file di internet?",
+            answers: {
+                a: "HTTP",
+                b: "FTP",
+                c: "TCP",
+                d: "SSH"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "6. Apa kepanjangan dari SQL dalam konteks database?",
+            answers: {
+                a: "Simple Query Language",
+                b: "Structured Query Language",
+                c: "Standard Query Language",
+                d: "Sequential Query Language"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "7. Apa itu 'client' dalam model client-server?",
+            answers: {
+                a: "Perangkat yang menyediakan layanan",
+                b: "Perangkat yang meminta layanan",
+                c: "Jaringan yang menghubungkan client dan server",
+                d: "Perangkat lunak yang menghubungkan database"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "8. Dalam konteks ODBC, apa fungsi dari 'DSN'?",
+            answers: {
+                a: "Data Server Name",
+                b: "Database Source Name",
+                c: "Data Source Name",
+                d: "Database Server Number"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "9. Apa manfaat utama menggunakan arsitektur client-server?",
+            answers: {
+                a: "Pengelolaan data yang lebih mudah",
+                b: "Pengurangan beban kerja pada client",
+                c: "Keamanan data yang lebih baik",
+                d: "Semua jawaban benar"
+            },
+            correctAnswer: "d"
+        },
+        {
+            question: "10. Apa yang dimaksud dengan 'middleware' dalam sistem client-server?",
+            answers: {
+                a: "Perangkat keras yang menghubungkan client dan server",
+                b: "Perangkat lunak yang memfasilitasi komunikasi antara client dan server",
+                c: "Protokol jaringan",
+                d: "Perangkat lunak server"
+            },
+            correctAnswer: "b"
+        }
+    ];
+
+    function buildQuiz(){
+        const output = [];
+
+        myQuestions.forEach(
+            (currentQuestion, questionNumber) => {
+                const answers = [];
+
+                for(letter in currentQuestion.answers){
+                    answers.push(
+                        `<label>
+                            <input type="radio" name="question${questionNumber}" value="${letter}">
+                            ${letter} :
+                            ${currentQuestion.answers[letter]}
+                        </label><br>`
+                    );
+                }
+
+                output.push(
+                    `<div class="question fw-700"> ${currentQuestion.question} </div>
+                    <div class="answers fw-400" > ${answers.join('')} </div>`
+                );
+            }
+        );
+
+        quizContainer.innerHTML = output.join('');
+    }
+
+    function showResults(){
+        const answerContainers = quizContainer.querySelectorAll('.answers');
+        let numCorrect = 0;
+
+        myQuestions.forEach( (currentQuestion, questionNumber) => {
+            const answerContainer = answerContainers[questionNumber];
+            const selector = `input[name=question${questionNumber}]:checked`;
+            const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+            if(userAnswer === currentQuestion.correctAnswer){
+                numCorrect++;
+                answerContainers[questionNumber].style.color = 'lightgreen';
+            } else {
+                answerContainers[questionNumber].style.color = 'red';
+            }
+        });
+
+        resultsContainer.innerHTML = `${numCorrect} dari ${myQuestions.length} jawaban benar`;
+    }
+
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+    
+    buildQuiz();
+
+    submitButton.addEventListener('click', showResults);
+});
