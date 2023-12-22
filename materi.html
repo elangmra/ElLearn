@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Author -->
+    <meta name="author" content="ElLearn">
+    <!-- Description -->
+    <meta name="description" content="ElLearn is a website for learn client-server concept and ODBC.">
+    <!-- Page Title -->
+    <title>ElLearn - Your Online Tutor</title>
+    <!-- Favicon -->
+    <link href="vendor/img/favicon.ico" rel="icon">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="vendor/css/bundle.min.css">
+    <!-- Revolution Slider CSS Files -->
+    <link rel="stylesheet" href="vendor/css/revolution-settings.min.css">
+    <!-- Plugin Css -->
+    <link href="vendor/css/LineIcons.min.css" rel="stylesheet">
+    <link href="vendor/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="vendor/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendor/css/wow.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/css/cubeportfolio.min.css">
+    <link href="minimal-startup/css/line-awesome.min.css" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link href="minimal-startup/css/style.css" rel="stylesheet">
+    <link href="minimal-startup/css/custom.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
+
+    <!-- Start Preloader -->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-blocks">
+                <span class="block-1"></span>
+                <span class="block-2"></span>
+                <span class="block-3"></span>
+                <span class="block-4"></span>
+                <span class="block-5"></span>
+                <span class="block-6"></span>
+                <span class="block-7"></span>
+                <span class="block-8"></span>
+                <span class="block-9"></span>
+                <span class="block-10"></span>
+                <span class="block-11"></span>
+                <span class="block-12"></span>
+                <span class="block-13"></span>
+                <span class="block-14"></span>
+                <span class="block-15"></span>
+                <span class="block-16"></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Header Start -->
+    <header id="home" class="cursor-light">
+        <div class="inner-header nav-icon">
+            <div class="main-navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 col-lg-10 simple-navbar d-flex align-items-center justify-content-start">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="./index.html">
+                                <img src="minimal-startup/images/ellearn-logos.png" class="logo-simple" alt="logo">
+                            </a>
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <div class="navbar-nav ml-auto">
+                                        <a class="nav-link active " href="materi.html">Materi</a>
+                                        <a class="nav-link " href="absen.html">Absensi</a>
+                                        <a class="nav-link " href="kuis.html">Quiz</a>
+                                        <a class="nav-link " href="tugas.html">Tugas</a>
+                                        <a class="nav-link " href="about.html">About</a>
+                                        <span class="menu-line link"><i aria-hidden="true"
+                                                class="fa fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div
+                            class="col-lg-2 px-0 simple-navbar align-items-center justify-content-end d-none d-lg-flex">
+                            <div class="navbar-social side-icons d-flex justify-content-center">
+                                <a class="social-icon" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-icon" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                                <a class="social-icon" href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="social-icon" href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--toggle btn-->
+            <a href="javascript:void(0)" class="sidemenu_btn mt-3" id="sidemenu_toggle">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!--Side Nav-->
+        <div class="side-menu hidden side-menu-opacity">
+            <div class="inner-wrapper">
+                <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+                <a href="./index.html" class="navbar-brand side-logo ">
+                    <img src="minimal-startup/images/ellearn-logos.png" alt="logo">
+                </a>
+                <nav class="side-nav w-100">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="materi.html">Materi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="absen.html">Absensi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="kuis.html">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="tugas.html">Tugas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html">About</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="side-footer text-white w-100 d-flex justify-content-center">
+                    <ul class="social-icons-simple">
+                        <li><a class="facebook-text-hvr" href="javascript:void(0)"><i class="fab fa-facebook-f"></i>
+                            </a> </li>
+                        <li><a class="twitter-text-hvr" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a>
+                        </li>
+                        <li><a class="linkedin-text-hvr" href="javascript:void(0)"><i class="fab fa-linkedin-in"></i>
+                            </a> </li>
+                        <li><a class="instagram-text-hvr" href="javascript:void(0)"><i class="fab fa-instagram"></i>
+                            </a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <svg class="separator__svg" id="side-menu-svg" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none"
+                fill="#fff" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 100 100 V 10 L 0 100" />
+                <path d="M 30 73 L 100 18 V 10 Z" fill="#fff" stroke-width="0" />
+            </svg>
+        </div>
+        <a id="close_side_menu" href="javascript:void(0);"></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Start Banner -->
+    <section class=" position-relative py-0 " id="banner">
+        <!-- Banner Svg -->
+        <svg id="banner-header-svg" class="separator__svg" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none"
+            fill="#6b30e9" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 100 100 V 10 L 0 100" />
+            <path d="M 30 73 L 100 18 V 10 Z" fill="#6b30e9" stroke-width="0" />
+        </svg>
+        <div class="container mt-5">
+            <div class="row ">
+                <!-- Content -->
+                <div class="col-12 mt-5">
+                    <div class="heading-area text-center text-white">
+                        <h1 class="heading wow fadeInUp" data-wow-delay=".2s">Materi</h1>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card" style="background-color: #0BBCFF;">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left text-white" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Materi #1
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body fw-400" style="background-color:#FFEBCC; text-align: justify;">
+                                    <h5 class="mb-3">
+                                        Pengenalan Client-Server
+                                    </h5>
+                                    <span class="mb-2"> Pada materi ini, kita akan mempelajari tentang Client-Server dan bagaimana cara kerjanya.</span>
+                                    <br>
+                                    <span class="mb-2"> Client-Server merupakan suatu paradigma hubungan antara computer yang menjadi penyedia dan computer yang menjadi penerima. Hubungan suatu CLIENT-SERVER adalah computer meminta sesuatu ke computer lain dan computer lain memenuhi permintaan. Hubungan ini menggunakan jaringan agar tetap terhubung satu sama lain,menggunakan metode LAN, MAN, atau WAN.</span>
+                                    <br>
+                                    <span class="mb-2"> Metode LAN menghubungkan suatu Client ke Server yang lain dengan g lain dengan jarak yang sangat jarak yang sangat dekat, Metode MAN menghubungkan jarak yang sedang antara Client dan Server dan Metode WAN menghubungkan Client dengan Server yang lain dengan jarak yang jauh, WAN bisa juga disebut dengan INTERNET.</span>
+                                    <br>
+                                    <span class="mb-2"> Server digunakan untuk mengirimkan dan menyediakan keperluan dari client. Dalam penyediaannya server dapat membatasi file dan penyediaannya server dapat membatasi file dan data yang di minta oleh client hal tersebut yang di minta oleh client hal tersebut dilakukan untuk mencegah suatu kejadian yang tidak terduga seperti server di serang dengan cara mengirim program tidak bertanggung jawab atau virus. Sehingga server memiliki hak yang lebih tinggi dibandingkan dengan client. </span>
+                                    <br>
+                                    <span class="mb-2"> SERVER atau KOMPUTER SERVER adalah suatu sistem komputer yang menyediakan layanan disebuah jaringan komputer yang dilengkapi dengan prosesor cepat dan RAM yang besar,dilengkapi dengan sistem operasi khusus untuk server Server mengontrol akses terhadap jaringan dan sumber daya yang terdapat di dalamnya seperti file atau printer, dan memberikan akses kepada Clients. </span>
+                                    <br>
+                                    <span class="mb-2"> CLIENTS adalah suatu system yang mengakses suatu system computer yang menyediakan layanan atau server melalui jaringan seperti LAN, MAN, WAN. Clients meminta data ke server dan server memenuhi permintaan tersebut yang dikirimkan melalui jaringan. Client Server terdiri dari 3 komponen pembentuk yaitu Client, Middleware, dan Server.</span>
+                                    <a href="odbc.pdf" class="btn"  download="odbc.pdf" target="_blank">
+                                        <i class="fas fa-download"></i>
+                                        Download Materi
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #0BBCFF;">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed text-white" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Materi #2
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body fw-400" style="background-color:#FFEBCC; text-align:justify;" >
+                                    <h5 class="mb-3">
+                                        Fungsi & Jenis Client-Server
+                                    </h5>
+                                 
+                                    <span class="mb-2">Pada materi ini, kita akan mempelajari tentang fungsi dan jenis-jenis Client-Server dan bagaimana cara kerjanya. </span>
+                                    <br>
+                                    <p class="fw-500 mb-0 fs-20">Fungsi Client-Server</p>
+                                    <span class="mb-2">Fungsi dari CLIENT - SERVER adalah untuk memudahkan pekerjaan dalam suatu system jaringan,  jaringan, yang diminta diminta oleh client dapat dipenuhi dipenuhi oleh server dalam waktu singkat singkat atau
+                                        sebaliknya. Sehingga pekerjaan menjadi efisien, berikut adalah tugas dari server dan client. </span>
+                                    <br>
+                                <ul>
+                                    <li>Server :</li>
+                                    <ul
+                                        <li>Menerima dan memproses basis data yang diminta dari client</li>
+                                        <li>Memeriksa autorisasi</li>
+                                        <li>Menjamin tidak terjadi pelanggaran terhadap integrity constraint</li>
+                                        <li>Melakukan query/pemrosesan update dan memindahkan response ke esponse ke client</li>
+                                        <li>Memelihara data dictionary</li>
+                                    </ul>
+                                    <li>Client :</li>
+                                    <ul>
+                                        <li>Mengatur user interface</li>
+                                        <li>Menerima dan memeriksa sintaks input dari pemakai</li>
+                                        <li>Memproses aplikasi</li>
+                                        <li>Generate permintaan basis data dan memindahkannya ke server</li>
+                                        <li>Memberikan response balik kepada pemakai</li>
+                                    </ul>
+                                    <br>
+                                    <p class="fw-500 mb-0 fs-20">Jenis Client-Server</p>
+                                    <ul>
+                                        <li>File Server</li>
+                                        <li>Database Server</li>
+                                        <li>Server Transactions</li>
+                                        <li>Groupsware Server</li>
+                                        <li>Object Application Server</li>
+                                        <li>Web Application Server</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #0BBCFF;">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed text-white" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Materi #3
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body fw-400" style="background-color:#FFEBCC; text-align:justify;" >
+                                    <h5 class="mb-3">
+                                        Tipe Client-Server - Standalone (One Tier)
+                                    </h5>
+                                    <span class="mb-2">Pada materi ini, kita akan mempelajari tentang Client-Server Standalone dan bagaimana cara kerjanya. </span>
+                                    <br>
+                                    <span class="mb-2">Standalone (One Tier)</span>
+                                    <br>
+                                    <span class="mb-2">Pada arsitektur ini semua pemrosesan dilakukan pada mainframe. Kode aplikasi, data dan semua komponen sistem ditempatkan dan dijalankan pada host. Walaupun computer client dipakai untuk mengakses mainframe, tidak ada pemrosesan yang terjadi pada mesin ini, dan karena mereka “dump- client” atau “dump-terminal”. Tipe model ini, dimana semua pemrosesan terjadi secara terpusat, dikenal sebagai berbasis-host. Sekilas dapat dilihat kesalahan pada model ini. Ada dua masalah pada komputasi berbasis host: Pertama, semua pemrosesan terjadi pada sebuah mesin tunggal, sehingga semakin banyak user yang mengakses host, semakin kewalahan jadinya. Jika sebuah perusahaan memiliki beberapa kantor pusat, user yang dapat mengakses mainframe adalah yang berlokasi pada tempat itu, membiarkan kantor lain tanpa akses ke aplikasi yang ada.
+                                        Pada saat itu jaringan sudah ada namun masih dalam tahap bayi, dan umumnya digunakan untuk menghubungkan terminal dump dan mainframe. Namun keterbatasan yang dikenakan pada user mainframe dan jaringan telah mulai dihapus.</span>
+                                    <span class="mb-2">Kelebihan:</span>
+                                    <ul>
+                                        <li>Sangat Mudah</li>
+                                        <li>Cepat dalam merancang dan mengaplikasikan</li>
+                                    </ul>
+                                    <span class="mb-2">Kekurangan:</span>
+                                    <ul>
+                                        <li>Skala Kecil</li>
+                                        <li>Susah diamankan</li>
+                                        <li>Menyebabkan perubahan terhadap salah satu komponen diatas tidak mungkin dilakukan, karena akan mengubah semua bagian.</li>
+                                        <li>Tidak memungkinkan adanya re-usable component dan code.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #0BBCFF;">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed text-white" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Materi #4
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body fw-400" style="background-color:#FFEBCC; text-align:justify;" >
+                                    <h5 class="mb-3">
+                                        Tipe Client-Server - Client-Server (Two Tier)
+                                    </h5>
+                                    <span class="mb-2">Pada materi ini, kita akan mempelajari tentang Client-Server Two Tier dan bagaimana cara kerjanya. </span>
+                                    <br>
+                                    <span class="mb-2">Client-Server (Two Tier)</span>
+                                    <br>
+                                    <span class="mb-2"> Dalam model client/server, pemrosesan pada sebuah aplikasi terjadi pada client dan server. Client/server adalah tipikal sebuah aplikasi two-tier dengan banyakclient dan sebuah server yang dihubungkan melalui sebuah jaringan.
+                                        Aplikasi ditempatkan pada computer client dan mesin database dijalankan pada server jarak-jauh. Aplikasi client mengeluarkan permintaan ke database yang mengirimkan kembali data ke client-nya.
+                                        Model Two-tier terdiri dari tiga komponen yang disusun menjadi dua lapisan : client (yang meminta serice) dan server (yang menyediakan service).</span>
+                                    <span class="mb-2">Kelebihan:</span>
+                                    <ul>
+                                        <li>Mudah</li>
+                                        <li>Menangani Database Server secara Khusus</li>
+                                        <li>Relatif lebih sederhana untuk di develop dan diimplementasikan</li>
+                                        <li>Lebih cocok diterapkan untuk bisnis kecil</li>
+                                    </ul>
+                                    <span class="mb-2">Kekurangan:</span>
+                                    <ul>
+                                        <li>Kurangnya Skalabilitas</li>
+                                        <li>Tidak ada keterbaharuan kode</li>
+                                        <li>Tidak ada tingkat menengah untuk menangani Tidak ada tingkat menengah untuk menangani keamanan keamanan dan transaksi dan transaksi
+                                            skala kecil</li>
+                                        <li>Susah di amankan</li>
+                                        <li>Lebih mahal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #0BBCFF;">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed text-white" type="button"
+                                        data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Materi #5
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionExample">
+                                <div class="card-body fw-400" style="background-color:#FFEBCC; text-align:justify;" >
+                                    <h5 class="mb-3">
+                                        Tipe Client-Server - Three Tier
+                                    </h5>
+                                    <span class="mb-2">Pada materi ini, kita akan mempelajari tentang Client-Server Three Tier dan bagaimana cara kerjanya. </span>
+                                    <br>
+                                    <span class="mb-2">Three Tier</span>
+                                    <br>
+                                    <span class="mb-2"> Arsitektur Three Tier merupakan inovasi dari arsitektur Client Server. Pada arsitektur Three Tier ini terdapat Application Server yang berdiri di antara Client dan Database Server. Contoh dari Application server adalah IIS, WebSphere, dan sebagainya.
+                                    <br>
+                                    Application Server umumnya berupa business process layer, dimana bisa didevelop menggunakan PHP, ASP.Net, maupun Java. Sehingga kita menempatkan beberapa business logic kita pada tier tersebut. Arsitektur Three Tier ini banyak sekali diimplementasikan dengan menggunakan Web Application. Karena dengan menggunakan Web Application, Client Side (Komputer Client) hanya akan melakukan instalasi Web Browser. Dan saat komputer client melakukan inputan data, maka data tersebut dikirimkan ke Application Server dan diolah berdasarkan business process-nya. Selanjutnya Application Server akan melakukan komunikasi dengan database server.
+                                    <br>
+                                    Biasanya, implementasi arsitektur Three Tier terkendala dengan network bandwidth. Karena aplikasinya berbasiskan web, maka Application Server selalu mengirimkan Web Application-nya ke computer Client. Jika kita memiliki banyak sekali client, maka bandwidth yang harus disiapkan akan cukup besar, Sedangkan network bandwidth biasanya memiliki limitasi. Oleh karena itu biasanya, untuk mengatasi masalah ini, Application Server ditempatkan pada sisi client dan hanya mengirimkan data ke dalam database server. Konsep model three-tier adalah model yang membagi fungsionalitas ke dalam lapisan-lapisan, aplikasiaplikasi mendapatkan skalabilitas, keterbaharuan, dan keamanan.</span>
+                                    <span class="mb-2">Kelebihan:</span>
+                                    <ul>
+                                        <li>Segala sesuatu mengenai database terinstalasikan pada sisi server,
+                                            begitu pula dengan pengkonfigurasiannya. Hal ini membuat harga
+                                            yang harus dibayar lebih kecil.</li>
+                                        <li>Apabila terjadi kesalahan pada salah satu lapisan tidak akan
+                                            menyebabkan lapisan lain ikut salah.</li>
+                                        <li>Perubahan pada salah satu lapisan tidak perlu menginstalasi ulang
+                                            pada lapisan yang lainnya dalam hal ini sisi server ataupun sisi client
+                                        </li>
+                                        <li>Skala besar</li>
+                                        <li>Keamanan dibelakang firewall</li>
+                                    </ul>
+                                    <span class="mb-2">Kekurangan:</span>
+                                    <ul>
+                                        <li>Lebih susah merancang dan mengatur</li>
+                                        <li>Lebih mahal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #0BBCFF;">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed text-white" type="button"
+                                        data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                        aria-controls="collapseSix">
+                                        Materi #6
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                data-parent="#accordionExample">
+                                <div class="card-body fw-400" style="background-color:#FFEBCC; text-align:justify;" >
+                                    <h5 class="mb-3">
+                                        Tipe Client-Server - Multi Tier
+                                    </h5>
+                                    <span class="mb-2">Pada materi ini, kita akan mempelajari tentang Client-Server Multi Tier dan bagaimana cara kerjanya. </span>
+                                    <br>
+                                    <span class="mb-2">Multi Tier</span>
+                                    <br>
+                                    <span class="mb-2"> Arsitektur Multi Tier adalah suatu metode yang sangat mirip dengan Three Tier. Bedanya, pada Multi Tier akan diperjelas bagian UI (User Interface) dan Data Processing. Yang membedakan arsitektur ini adalah dengan adanya Business Logic Server. Database Server dan Bussines Logic Server merupakan bagian dari Data Processing, sedangkan Application Server dan Client/Terminal merupakan bagian dari UI. Business Logic Server biasanya masih menggunakan bahasa pemrograman terdahulu, seperti COBOL. Karena sampai saat ini, bahasa pemrograman tersebut masih sangat mumpuni sebagai business process.
+                                        Multi-tier architecture menyuguhkan bentuk three – tier yang diperluas dalam model fisik yang terdistribusi. Application server dapat mengakses Application server yang lain untuk mendapat data dari Data server dan mensuplai servis ke client Application.</span>
+                                    <span class="mb-2">Kelebihan:</span>
+                                    <ul>
+                                        <li>Dengan menggunakan aplikasi multi-tier database, maka logika
+                                            aplikasi dapat dipusatkan pada middle-tier, sehingga memudahkan
+                                            untuk melakukan melakukan control control terhadap terhadap client-client client-client yang mengakses mengakses
+                                            middle server dengan middle server dengan mengatur seting pada dcomcnfg</li>
+                                        <li>Dengan menggunakan aplikasi multi-tier, maka database driver
+                                            seperti BDE/ODBC untuk mengakses database hanya perlu diinstal
+                                            sekali pada middle server, tidak perlu pada masing-masing client</li>
+                                        <li>Memerlukan adaptasi yang sangat luas ruang lingkupnya apabila
+                                            terjadi perubahan sistem yang besar</li> 
+                                    </ul>
+                                    <span class="mb-2">Kekurangan:</span>
+                                    <ul>
+                                        <li>Program aplikasi tidak bisa mengquery langsung ke database server,
+                                            tetapi harus memanggil prosedur-prosedur yang telah dibuat dan
+                                            disimpan pada middle-tier</li>
+                                        <li>Lebih mahal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #0BBCFF;">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed text-white" type="button"
+                                        data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        Materi #7
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                data-parent="#accordionExample">
+                                <div class="card-body fw-400" style="background-color:#FFEBCC; text-align:justify;" >
+                                    <h5 class="mb-3">
+                                        Open Database Connectivity (ODBC)
+                                    </h5>
+                                    <span class="mb-2">Pada materi ini, kita akan mempelajari tentang ODBC dan bagaimana cara kerjanya. </span>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VkIvMDSIH5E?si=SVYPeNeZhozGb_iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <br>
+                                    <span class="my-2">
+                                        Open Database Connectivity (disingkat menjadi ODBC) adalah sebuah standar terbuka
+                                        untuk konektivitas antar mesin basis data. Standar ini menyediakan API yang dapat
+                                        digunakan untuk menjalankan dan mengoneksikan sebuah aplikasi dengan sebuah sistem
+                                        manajemen basis data (SMBD). Para desainer ODBC membuatnya dengan tujuan agar ODBC
+                                        terbebas dari penggunaan bahasa pemrograman tertentu, sistem manajemen basis data
+                                        tertentu, dan sistem operasi tertentu.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Banner -->
+
+    <!-- Start Footer -->
+    <footer class="footer-style-1 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!--Social-->
+                <div class="col-lg-6">
+                    <div class="footer-social text-center text-lg-left ">
+                        <ul class="list-unstyled">
+                            <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true"
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true"
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true"
+                                        class="fab fa-google-plus-g"></i></a></li>
+                            <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true"
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true"
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true"
+                                        class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Text-->
+                <div class="col-lg-6 text-center text-lg-left">
+                    <p class="company-about fadeIn">&copy; 2023 ElLearn. Made With Love By <a
+                            href="javascript:void(0);">Elang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Scroll Top -->
+    <div class="go-top"><i class="fas fa-angle-up"></i><i class="fas fa-angle-up"></i></div>
+    <!-- End Scroll Top -->
+
+    <!-- JavaScript -->
+    <script src="vendor/js/bundle.min.js"></script>
+    <!-- Plugin Js -->
+    <script src="vendor/js/jquery.appear.js"></script>
+    <script src="vendor/js/jquery.fancybox.min.js"></script>
+    <script src="vendor/js/owl.carousel.min.js"></script>
+    <script src="vendor/js/wow.min.js"></script>
+    <script src="vendor/js/jquery.cubeportfolio.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="vendor/js/contact_us.js"></script>
+    <script src="minimal-startup/js/script.js"></script>
