@@ -68,4 +68,12 @@ body {
     .heading{
         color: black;
     }
+    .justify-content-center{
+        justify-content: center !important;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .justify-content-lg-center{
+        justify-content: center !important;
+    }
 }
